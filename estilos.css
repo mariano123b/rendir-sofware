@@ -1,0 +1,92 @@
+#contenedorRecomendados {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('imagenes/logo-final.jpg');
+}
+a{ /*ajusta el color del texto y su subrajado*/
+    text-decoration: none;
+    color:rgb(251, 251, 251) ;
+}
+/*barra de navegacion*/
+.barra{
+    margin:  auto;
+    display:flex;
+    height: 70;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    align-items:center;
+    /*aleja del vorde lo escrito */
+    padding: 5px;
+}
+/*caja del logo*/
+.logo{
+    display: flex;
+    align-items:center ;
+}
+/*ajuste de la imagen del logo*/
+.logo img{
+    height: 70px;
+    /*aleja el logo del nombre de la compania*/
+    margin-right: 8px;
+}
+
+.nav-link{
+    color: aliceblue;
+    display:flex;
+    align-items: center;
+}
+/*hace el efecto de negrita cuando pasas sobre las letras*/
+.barra-escritura{
+    font-weight: 600;/*tamaño ajustar*/
+    color:rgb(141, 141, 141)
+}
+/*carucel*/
+.carousel{
+    margin:auto;
+    width: 800px;
+   
+}
+.d-block{ 
+    height: 450px;
+}
+/*el div de recomendados*/
+.recomendado{
+    margin: 40px; 
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+    padding-bottom: 10px;
+    
+}
+/*ajusta la palabra "nuevas inclusion"*/
+.aaa{
+    display: flex;
+    justify-content:center;
+    color: #f9f7eb;
+    padding-bottom: 10px;
+    background-color: #eaca40; ;
+    
+}
+.imagenes{
+    display: flex;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.img-thumbnail{
+    border:.2rem solid #5ba8d2;
+    width: 690px;
+    height: 350px;
+}
+.name{
+    color: #f9f7eb;
+}
+/*
+margin: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    */

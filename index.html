@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <!--link de bootrap(carucel)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!--Barra de navegacion-->
+    <header class="barra">
+      <div class="logo">
+        <img src="imagenes/logo.jpg" alt="logo">
+        <!--pagina inicial-->
+        <h2><a href="index.html">compania</a></h2>
+      </div>
+      <nav class="barra-escritura">
+        <a href="links/catalogo/catalogo.html" class="nav-link">catalogo</a>
+        <a href="links/proximas/proximos.html" class="nav-link">proximas añadiduras</a>
+      </nav>
+    </header>
+    <!--Carousel(ventana cambiate)-->
+    <h4 class="aaa">nuevas inclusiones</h4>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!--imagenes del carucel-->
+          <img src="imagenes/imagenes-juegos/counter_strike.png" class="d-block w-100" alt="counterstrike">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/imagenes-juegos/phasmophobia.jpg" class="d-block w-100" alt="gta">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/imagenes-juegos/project.jpg" class="d-block w-100" alt="minecraft">
+        </div>
+      </div>
+      <!--cambiar de imagen del carucel-->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="recomendado">
+      <h2>Recomendados de la pagina</h2>
+    </div>
+    <div>
+      <div id="contenedorRecomendados"></div>
+    </div>
+    <script src="appis/app_reco.js"></script>
+</body>
+</html>
